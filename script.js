@@ -14,11 +14,6 @@ function mensagem(text) {
     document.getElementById('mensagem').innerHTML = text;
 }
 
-// Define players name
-function showPlayerName(nome) {
-    document.getElementById('jogador-nome').innerHTML
-}
-
 // Calculates and return who won
 // 0 - Draw
 // 1 - Player Won
@@ -114,4 +109,5 @@ playerName = prompt('Qual é o seu nome?')
 showPlayerName = playerName
 mensagem('Bem vindo, ' + playerName + '! Escolha uma opção para jogar.');
 
-console.log(playerName)
+document.getElementById('jogador-nome').innerHTML = playerName
+
